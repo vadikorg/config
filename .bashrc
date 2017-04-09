@@ -9,10 +9,13 @@ PS1='\[\e[0;31m\]\u\[\e[0;33m\]@\[\e[0;32m\]\h \[\e[0;33m\]\w \[\e[0;35m\]\$ \[\
 
 # You may uncomment the following lines if you want `ls' to be colorized:
 export LS_OPTIONS='--color=auto'
-eval "`dircolors`"
+eval "`dircolors -b`"
 alias ls='ls $LS_OPTIONS'
-alias ll='ls $LS_OPTIONS -l'
-alias l='ls $LS_OPTIONS -lA'
+# alias ll='ls $LS_OPTIONS -l'
+# alias l='ls $LS_OPTIONS -lA'
+
+alias grep='grep --color=auto'
+
 #
 # Some more alias to avoid making mistakes:
 # alias rm='rm -i'
